@@ -4,9 +4,10 @@ import { Component } from 'react';
 import MyComponent from "./MyComponent";
 import Counter from './Counter';
 import Say from './Say';
-import EventPractice from './EventPractice'
-import ValidationSample from './ValidationSample'
+import EventPractice from './EventPractice';
+import ValidationSample from './ValidationSample';
 import ScrollBox from './ScrollBox';
+import IterationSample from './IterationSample';
 
 import ClassComponent from './ClassComponent';
 import FunctionComponent from './FunctionComponent';
@@ -23,13 +24,14 @@ class App extends Component {
     //   </>
     // );
     // return <EventPractice/>;
-    return (
-      <>
-        <ValidationSample/>
-        <ScrollBox ref={(ref) => this.scrollBox=ref}/>
-        <button onClick={() => this.scrollBox.scrollToBottom()}>맨 밑으로</button>
-      </>
-    );
+    // return (
+    //   <>
+    //     <ValidationSample/>
+    //     <ScrollBox ref={(ref) => this.scrollBox=ref}/>
+    //     <button onClick={() => this.scrollBox.scrollToBottom()}>맨 밑으로</button>
+    //   </>
+    // );
+    return <IterationSample/>;
     // return <ClassComponent name={name}/>;
     // return <FunctionComponent name={ name } number={ 3223 }/>;
     // return <FunctionComponent/>;
